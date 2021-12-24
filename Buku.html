@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="assets/Style.css" />
+    <link rel="stylesheet" href="assets/style.css" />
     <title>Perpustakaan Apps | Daftar Buku</title>
   </head>
   <body>
@@ -27,103 +27,79 @@
       </div>
     </nav>
     <section>
-      <div class="tengah">
-        <div class="tulisan">
-          <p>Daftar Buku Di Perpustakaan Universitas Indraprasta PGRI</p>
+      <div class="tulisan tengah">
+        <p>Daftar Buku Di Perpustakaan Universitas Indraprasta PGRI</p>
+      </div>
+      <br />
+    </section>
+    <section class="input_section">
+      <h2>Masukkan Buku Baru</h2>
+      <form id="inputBook">
+        <div class="input">
+          <label for="inputBookTitle">Judul</label>
+          <input id="inputBookTitle" type="text" required />
         </div>
-        <br />
-        <div class="cari">
-          <form>
-            <label for="Nama">Cari Buku : </label><input type="text" size="35px" name="Cari" id="Cari" placeholder="Judul" />
-            <button type="submit" name="Cari">Cari</button>
-          </form>
+        <div class="input">
+          <label for="inputBookAuthor">Penulis</label>
+          <input id="inputBookAuthor" type="text" required />
         </div>
-        <br />
-        <br />
-        <table border="0">
-          <tr>
-            <th>NO</th>
-            <th>Judul Buku</th>
-            <th>Penulis</th>
-            <th>Penerbit</th>
-            <th>Jumlah</th>
-          </tr>
-          <tr>
-            <td>1</td>
-            <td>Pulang - Pergi</td>
-            <td>Tere Liye</td>
-            <td>Sabak Grib Nusantara</td>
-            <td>3</td>
-          </tr>
-          <tr>
-            <td>2</td>
-            <td>Forever Monday</td>
-            <td>Ruth Priscilia Angelina</td>
-            <td>Gramedia</td>
-            <td>2</td>
-          </tr>
-          <tr>
-            <td>3</td>
-            <td>Senja,Hujan,& Cerita Yang Telah Usai</td>
-            <td>Boy Candra</td>
-            <td>Mediakita</td>
-            <td>1</td>
-          </tr>
-          <tr>
-            <td>4</td>
-            <td>Alaya</td>
-            <td>Daniel Mahendra</td>
-            <td>Epigraf</td>
-            <td>1</td>
-          </tr>
-          <tr>
-            <td>5</td>
-            <td>Laut Bercerita</td>
-            <td>Leila S. Chudori</td>
-            <td>Gramedia</td>
-            <td>2</td>
-          </tr>
-          <tr>
-            <td>6</td>
-            <td>Selamat Tinggal</td>
-            <td>Tere Liye</td>
-            <td>Gramedia</td>
-            <td>1</td>
-          </tr>
-          <tr>
-            <td>7</td>
-            <td>Titik Nol</td>
-            <td>Agustinus Wibowo</td>
-            <td>Gramedia</td>
-            <td>2</td>
-          </tr>
-          <tr>
-            <td>8</td>
-            <td>Arah Langkah</td>
-            <td>Fiersa Besari</td>
-            <td>Mediakita</td>
-            <td>2</td>
-          </tr>
-          <tr>
-            <td>9</td>
-            <td>The Art Of Happiness</td>
-            <td>Dalai Lama</td>
-            <td>Riverhead</td>
-            <td>3</td>
-          </tr>
-          <tr>
-            <td>10</td>
-            <td>Lembaran Baru Kehidupan</td>
-            <td>Lieke Alfana Lukas</td>
-            <td>Deepublish</td>
-            <td>1</td>
-          </tr>
-        </table>
+        <div class="input">
+          <label for="inputBookYear">Tahun</label>
+          <input id="inputBookYear" type="number" required />
+        </div>
+        <div class="input_inline">
+          <label for="inputBookIsComplete">Selesai dibaca</label>
+          <input id="inputBookIsComplete" type="checkbox" />
+        </div>
+        <button id="bookSubmit" type="submit">Masukkan Buku ke rak <span>Belum selesai dibaca</span></button>
+      </form>
+    </section>
+    <section class="search_section">
+      <h2>Cari Buku (Opsional)</h2>
+      <form id="searchBook">
+        <label for="searchBookTitle">Judul</label>
+        <input id="searchBookTitle" type="text" />
+        <button id="searchSubmit" type="submit">Cari</button>
+      </form>
+    </section>
+
+    <section class="book_shelf">
+      <h2>Belum selesai dibaca</h2>
+
+      <div id="incompleteBookshelfList" class="book_list">
+        <!--            <article class="book_item">-->
+        <!--                <h3>Book Title</h3>-->
+        <!--                <p>Penulis: John Doe</p>-->
+        <!--                <p>Tahun: 2002</p>-->
+
+        <!--                <div class="action">-->
+        <!--                    <button class="green">Selesai dibaca</button>-->
+        <!--                    <button class="red">Hapus buku</button>-->
+        <!--                </div>-->
+        <!--            </article>-->
+      </div>
+    </section>
+
+    <section class="book_shelf">
+      <h2>Selesai dibaca</h2>
+
+      <div id="completeBookshelfList" class="book_list">
+        <!--            <article class="book_item">-->
+        <!--                <h3>Book Title</h3>-->
+        <!--                <p>Penulis: John Doe</p>-->
+        <!--                <p>Tahun: 2002</p>-->
+
+        <!--                <div class="action">-->
+        <!--                    <button class="green">Belum selesai di Baca</button>-->
+        <!--                    <button class="red">Hapus buku</button>-->
+        <!--                </div>-->
+        <!--            </article>-->
       </div>
     </section>
     <a href="index.html" class="tombol-home">Kembali ke Home</a>
     <footer>
       <div class="footer-buku">&copy; 2021. <b>Group 1 PWD</b></div>
     </footer>
+    <script src="buku.js"></script>
   </body>
 </html>

@@ -35,84 +35,66 @@
         </div>
         <br />
         <div class="cari">
-          <form>
-            <label for="Nama">Cari transaksi : </label><input type="text" size="35px" name="Cari" id="Cari" placeholder="Nama Peminjam" />
-            <button type="submit" name="Cari">Cari</button>
-          </form>
+          <p>Note: Denda per hari Rp.2000,-</p>
         </div>
-        <br />
-        <br />
-        <table border="0">
-          <tr>
-            <th>NO</th>
-            <th>Judul Buku</th>
-            <th>Peminjam</th>
-            <th>Tanggal Pinjam</th>
-            <th>Tanggal Pengembalian</th>
-            <th>Denda Terlambat</th>
-          </tr>
-          <tr>
-            <td>1</td>
-            <td>Pulang - Pergi</td>
-            <td>Hendro Syahputra</td>
-            <td>10-12-2021</td>
-            <td>20-12-2021</td>
-            <td>
-              3 Hari <br />
-              (Rp. 3000)
-            </td>
-          </tr>
-          <tr>
-            <td>2</td>
-            <td>Selamat Tinggal</td>
-            <td>Arman Maulana</td>
-            <td>9-12-2021</td>
-            <td>22-12-2021</td>
-            <td>
-              6 Hari <br />
-              (Rp. 6000)
-            </td>
-          </tr>
-          <tr>
-            <td>3</td>
-            <td>Titik Nol</td>
-            <td>Firman</td>
-            <td>19-12-2021</td>
-            <td>30-12-2021</td>
-            <td>
-              4 Hari <br />
-              (Rp. 4000)
-            </td>
-          </tr>
-          <tr>
-            <td>4</td>
-            <td>Lembaran Baru Kehidupan</td>
-            <td>Icad Ramadhan</td>
-            <td>05-12-2021</td>
-            <td>22-12-2021</td>
-            <td>
-              10 Hari <br />
-              (Rp. 10000)
-            </td>
-          </tr>
-          <tr>
-            <td>5</td>
-            <td>Alaya</td>
-            <td>Adinda Dhea Purwanto</td>
-            <td>19-11-2021</td>
-            <td>20-12-2021</td>
-            <td>
-              20 Hari <br />
-              (Rp. 20000)
-            </td>
-          </tr>
-        </table>
+    </section>
+    <section class="input_section">
+      <h2>Masukkan Transaksi Baru</h2>
+      <form id="inputBook">
+        <div class="input">
+          <label for="inputBookTitle">Nama Peminjam</label>
+          <input id="inputBookTitle" type="text" required />
+        </div>
+        <div class="input">
+          <label for="inputBookAuthor">Judul Buku</label>
+          <input id="inputBookAuthor" type="text" required />
+        </div>
+        <div class="input">
+          <label for="inputBookPinjam">Tanggal Pinjam</label>
+          <input id="inputBookPinjam" type="date" required />
+        </div>
+        <div class="input">
+          <label for="inputBookKembali">Tanggal Pengembalian</label>
+          <input id="inputBookKembali" type="date" required />
+        </div>        
+        <div class="input">
+          <label for="inputBookDenda">Denda</label>
+          <input id="inputBookDenda" type="text" />
+        </div>        
+        <button id="bookSubmit" type="submit">Masukkan Transaksi</button>
+      </form>
+    </section>
+    <section class="search_section">
+      <h2>Cari Transaksi (Opsional)</h2>
+      <form id="searchBook">
+        <label for="searchBookTitle">Nama Peminjam</label>
+        <input id="searchBookTitle" type="text" />
+        <button id="searchSubmit" type="submit">Cari</button>
+      </form>
+    </section>
+
+    <section class="book_shelf">
+      <h2>Daftar Transaksi</h2>
+
+      <div id="incompleteBookshelfList" class="book_list">
+        <!--            <article class="book_item">-->
+        <!--                <h3>Judul Buku</h3>-->
+        <!--                <p>Tgl Pinjam</p>-->
+        <!--                <p>Tgl Pengembalian</p>-->
+        <!--                <p>Denda</p>-->
+
+        <!--                <div class="action">-->
+        <!--                    <button class="red">Hapus Transaksi</button>-->
+        <!--                </div>-->
+        <!--            </article>-->
       </div>
     </section>
+    
     <br />
     <a href="index.html" class="tombol-home">Kembali ke Home</a>
     <footer>
       <div class="footer-transaksi">&copy; 2021. <b>Group 1 PWD</b></div>
     </footer>
+    <script src="transaksi.js"></script>
   </body>
 </html>

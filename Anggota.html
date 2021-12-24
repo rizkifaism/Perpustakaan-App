@@ -33,59 +33,54 @@
         <div class="tulisan">
           <p>Daftar Anggota Di Perpustakaan Universitas Indraprasta PGRI</p>
         </div>
-        <br />
-        <div class="cari">
-          <form>
-            <label for="Nama">Cari Buku : </label><input type="text" size="35px" name="Cari" id="Cari" placeholder="Judul" />
-            <button type="submit" name="Cari">Cari</button>
-          </form>
+    </section>
+    
+    <section class="input_section">
+      <h2>Masukkan Anggota Baru</h2>
+      <form id="inputBook">
+        <div class="input">
+          <label for="inputBookTitle">Nama</label>
+          <input id="inputBookTitle" type="text" required />
         </div>
-        <br />
-        <br />
-        <table border="0">
-          <tr>
-            <th>NO</th>
-            <th>NPM</th>
-            <th>Nama</th>
-            <th>Prodi</th>
-            <th>Tahun Ajaran</th>
-          </tr>
-          <tr>
-            <td>1</td>
-            <td>201943500001</td>
-            <td>Muhammad bakti</td>
-            <td>Informatika</td>
-            <td>2019</td>
-          </tr>
-          <tr>
-            <td>2</td>
-            <td>201243300018</td>
-            <td>Putri</td>
-            <td>Bahasa Indonesia</td>
-            <td>2012</td>
-          </tr>
-          <tr>
-            <td>3</td>
-            <td>201253540012</td>
-            <td>Chandra William</td>
-            <td>DKV</td>
-            <td>2012</td>
-          </tr>
-          <tr>
-            <td>4</td>
-            <td>201543500005</td>
-            <td>Daniel</td>
-            <td>Informatika</td>
-            <td>2015</td>
-          </tr>
-          <tr>
-            <td>5</td>
-            <td>201843500357</td>
-            <td>Nagisa</td>
-            <td>Informatika</td>
-            <td>2018</td>
-          </tr>
-        </table>
+        <div class="input">
+          <label for="inputBookAuthor">NPM</label>
+          <input id="inputBookAuthor" type="text" required />
+        </div>
+        <div class="input">
+          <label for="inputBookProdi">Prodi</label>
+          <input id="inputBookProdi" type="text" required />
+        </div>
+        <div class="input">
+          <label for="inputBookYear">Tahun Ajaran</label>
+          <input id="inputBookYear" type="number" required />
+        </div>
+        <button id="bookSubmit" type="submit">Masukkan Anggota</button>
+      </form>
+    </section>
+
+    <section class="search_section">
+      <h2>Cari Anggota (Opsional)</h2>
+      <form id="searchBook">
+        <label for="searchBookTitle">Nama Anggota</label>
+        <input id="searchBookTitle" type="text" />
+        <button id="searchSubmit" type="submit">Cari</button>
+      </form>
+    </section>
+
+    <section class="book_shelf">
+      <h2>Daftar Anggota</h2>
+
+      <div id="incompleteBookshelfList" class="book_list">
+        <!--            <article class="book_item">-->
+        <!--                <h3>Nama</h3>-->
+        <!--                <p>NPM</p>-->
+        <!--                <p>Prodi</p>-->
+        <!--                <p>Tahun Ajaran</p>-->
+
+        <!--                <div class="action">-->
+        <!--                    <button class="red">Hapus Anggota</button>-->
+        <!--                </div>-->
+        <!--            </article>-->
       </div>
     </section>
     <br /><br /><br /><br /><br /><br />
@@ -93,5 +88,6 @@
     <footer>
       <div class="footer-anggota">&copy; 2021. <b>Group 1 PWD</b></div>
     </footer>
+    <script src="anggota.js"></script>
   </body>
 </html>
