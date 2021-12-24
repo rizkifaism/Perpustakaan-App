@@ -374,3 +374,67 @@ p {
   background-color: darkred;
   color: white;
 }
+
+@media screen and (max-width: 999.99px) {
+  .menu {
+    width: 85%;
+  }
+  .input_section > form > .input > input {
+    display: block;
+    width: 90%;
+    padding: 8px;
+    border-radius: 5px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .tulisan {
+    font-size: 25px;
+  }
+  .isi-menu {
+    width: 100%;
+    padding: 30px;
+  }
+  .isi-menu img {
+    width: 40%;
+  }
+  .isi-anggota {
+    width: 100%;
+  }
+  .isi-anggota img {
+    width: 30%;
+  }
+  .cari {
+    width: 100%;
+  }
+  .input_section > form > .input > input {
+    display: block;
+    width: 90%;
+    padding: 8px;
+    border-radius: 5px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .tulisan {
+    font-size: 20px;
+  }
+  .isi-menu {
+    width: 100%;
+    padding: 30px;
+  }
+
+  .isi-menu img {
+    width: 35%;
+  }
+
+  .tulisan-menu {
+    font-size: 20px;
+  }
+  .input_section > form > .input > input {
+    display: block;
+    width: 90%;
+    padding: 8px;
+    border-radius: 5px;
+  }
+}
