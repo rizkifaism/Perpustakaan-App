@@ -160,27 +160,7 @@ section {
   text-align: center;
   width: 100%;
   padding: 10px 0px 10px 0px;
-  margin-top: 327px;
-}
-
-table {
-  background-color: snow;
-  border-collapse: collapse;
-  width: 100%;
-}
-
-th,
-td {
-  padding: 5px;
-}
-
-tr {
-  text-align: center;
-}
-
-th {
-  background-color: #8fd6f6;
-  color: #000000;
+  margin-top: 312px;
 }
 
 .tombol-home {
