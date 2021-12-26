@@ -437,4 +437,11 @@ p {
     padding: 8px;
     border-radius: 5px;
   }
+  .footer-login {
+    background-color: #8fd6f6;
+    text-align: center;
+    width: 100%;
+    padding: 10px 0px 10px 0px;
+    margin-top: 495px;
+  }
 }
