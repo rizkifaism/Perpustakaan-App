@@ -84,7 +84,7 @@ section {
 }
 
 .list-menu {
-  width: 95%;
+  width: 100%;
   position: relative;
   display: flex;
   flex-wrap: wrap;
@@ -111,7 +111,7 @@ section {
   text-align: center;
   width: 100%;
   padding: 10px 0px 10px 0px;
-  margin-top: 146px;
+  margin-top: 138px;
 }
 
 .list-anggota {
