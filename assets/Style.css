@@ -93,6 +93,7 @@ section {
 .isi-menu {
   width: 20%;
   margin: 0 auto;
+  transition: 500ms;
 }
 
 .isi-menu img {
